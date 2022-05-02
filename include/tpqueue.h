@@ -4,11 +4,11 @@
 
 template<typename T>
 class TPQueue {
-  struct Item {
-    T value;
-    Item* next;
-  };
-private:
+ private:
+     struct Item {
+      T value;
+      Item* next;
+     };
      Item* head, *tail;
      Item *create(T value) {
          Item* item = new Item;
@@ -16,7 +16,7 @@ private:
          item -> next = nullptr;
          return item;
      }
-public:
+ public:
      TPQueue() : head(nullptr), tail(nullptr) {}
      void push(const T& value) {
          if (tail && head) {
