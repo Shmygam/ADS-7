@@ -8,7 +8,7 @@ class TPQueue {
     T value;
     Item* next;
   };
- private:
+private:
      Item* head, *tail;
      Item *create(T value) {
          Item* item = new Item;
@@ -16,7 +16,7 @@ class TPQueue {
          item -> next = nullptr;
          return item;
      }
- public:
+public:
      TPQueue() : head(nullptr), tail(nullptr) {}
      void push(const T& value) {
          if (tail && head) {
