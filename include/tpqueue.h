@@ -16,7 +16,7 @@ class TPQueue {
          item -> next = nullptr;
          return item;
      }
- 
+
  public:
      TPQueue() : head(nullptr), tail(nullptr) {}
      void push(const T& value) {
